@@ -1,5 +1,6 @@
-
 ### Paths
+
+---
 
 VsCode = {$USER}\AppData\Roaming\Code\User\settings.json
 
