@@ -1,0 +1,126 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "python.testing.pytestEnabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "diffEditor.wordWrap": "on",
+  "editor.accessibilitySupport": "off",
+  "editor.wordWrap": "on",
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontSize": 14,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json]": {
+    "editor.fontFamily": "CaskaydiaCove NF",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "[typescript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "[javascriptreact]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "[typescriptreact]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
+  },
+  "[c]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
+  },
+  "[haskell]": {
+    "editor.fontFamily": "Consolas ligaturized v2,Consolas, 'Courier New', monospace"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "explorer.confirmDelete": false,
+  "code-runner.ignoreSelection": true,
+  "workbench.startupEditor": "none",
+  "typescript.autoClosingTags": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "python.terminal.executeInFileDir": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "custom": {
+          "borderWidth": "0 0 1px 0",
+          "borderStyle": "solid",
+          "borderColor": "yellow"
+        }
+      }
+    }
+  },
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+
+  "editor.fontWeight": "350",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 32,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "phase",
+  "editor.renderLineHighlight": "all",
+  "editor.foldingImportsByDefault": true,
+  "window.title": "${activeFolderMedium}\\${activeEditorShort}",
+  "workbench.colorTheme": "One Dark Pro",
+  "window.autoDetectHighContrast": false,
+  "git.confirmSync": false,
+  "cSpell.userWords": [
+    "Bloglist",
+    "linebreak",
+    "Patientor",
+    "reduxjs",
+    "Togglable",
+    "vite",
+    "vitejs"
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "workbench.editor.enablePreview": false,
+  "breadcrumbs.enabled": false,
+  "cSpell.language": "es,en,es-ES",
+  "cSpell.caseSensitive": false,
+  "redhat.telemetry.enabled": false,
+  "editor.wordWrapColumn": 1000,
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.vcFormat.indent.preserveComments": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+  "C_Cpp.clang_format_sortIncludes": true
+}
