@@ -66,9 +66,7 @@
         },
         {
           "background": "p:blue",
-          "background_templates": [
-            "{{ if gt .Code 0 }}p:red{{ end }}"
-          ],
+          "background_templates": ["{{ if gt .Code 0 }}p:red{{ end }}"],
           "foreground": "p:white",
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "properties": {
@@ -122,14 +120,7 @@
           "background": "transparent",
           "foreground": "p:white",
           "style": "plain",
-          "template": "in <p:blue><b>{{ .Name }}</b></> ",
-          "type": "shell"
-        },
-        {
-          "background": "transparent",
-          "foreground": "p:white",
-          "style": "plain",
-          "template": "at <p:blue><b>{{ .CurrentDate | date \"15:04:05\" }}</b></>",
+          "template": "<p:blue><b>{{ .CurrentDate | date \"15:04:05\" }}</b></>",
           "type": "time"
         }
       ],
@@ -162,9 +153,7 @@
       },
       "style": "diamond",
       "template": " \ue7ad {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} ",
-      "tips": [
-        "aws"
-      ],
+      "tips": ["aws"],
       "trailing_diamond": "\ue0b4",
       "type": "aws"
     },
@@ -174,9 +163,7 @@
       "leading_diamond": "\ue0b6",
       "style": "diamond",
       "template": " \ufd03 {{ .Name }} ",
-      "tips": [
-        "az"
-      ],
+      "tips": ["az"],
       "trailing_diamond": "\ue0b4",
       "type": "az"
     }
