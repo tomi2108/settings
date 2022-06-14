@@ -91,7 +91,6 @@
   "typescript.implementationsCodeLens.enabled": true,
   "window.autoDetectHighContrast": false,
   "window.title": "${activeFolderMedium}\\${activeEditorShort}",
-  "workbench.colorTheme": "One Dark Pro",
   "workbench.editor.enablePreview": false,
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
@@ -152,5 +151,84 @@
     "editor.maxTokenizationLineLength": 2500,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontFamily": "'Cascadia Code',monospace"
-  }
+  },
+  "window.menuBarVisibility": "compact",
+  "editor.tokenColorCustomizations": {
+    "[One Monokai]": {
+      "strings": "#98C379",
+      "textMateRules": [
+        {
+          "scope": ["constant.language"],
+          "settings": {
+            "foreground": "#D19A66",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.function",
+            "support.function.js",
+            "support.type.property-name.css"
+          ],
+          "settings": {
+            "foreground": "#61afef",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.separator.key-value",
+            "storage.type.function.arrow.js"
+          ],
+          "settings": {
+            "foreground": "#E06C75"
+          }
+        },
+        {
+          "scope": ["support.class.component"],
+          "settings": {
+            "foreground": "#E5C07B"
+          }
+        },
+        {
+          "scope": ["storage.type"],
+          "settings": {
+            "foreground": "#C678DD"
+          }
+        },
+        {
+          "scope": ["entity.other.attribute-name"],
+          "settings": {
+            "foreground": "#d19a66",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.readwrite.alias",
+            "variable.other.property",
+            "variable.other.constant",
+            "variable.other.object"
+          ],
+          "settings": {
+            "foreground": "#43b6b9"
+          }
+        }
+      ]
+    }
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[One Monokai]": {
+      "enabled": true,
+      "rules": {
+        "class": { "foreground": "#d19a66", "bold": true },
+        "variable": "#43b6b9",
+        "enumMember": { "foreground": "#ab38cd", "italic": true },
+        "method": { "foreground": "#61afef", "italic": true },
+        "function": { "foreground": "#61afef", "italic": true },
+        "property": { "foreground": "#566fc2", "italic": true, "bold": true }
+      }
+    }
+  },
+  "workbench.colorTheme": "One Monokai"
 }
