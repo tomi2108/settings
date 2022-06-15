@@ -1,72 +1,67 @@
 {
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
+  "breadcrumbs.enabled": false,
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.vcFormat.indent.preserveComments": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+  "code-runner.ignoreSelection": true,
   "code-runner.runInTerminal": true,
   "code-runner.saveAllFilesBeforeRun": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "python.testing.pytestEnabled": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true,
+  "cSpell.caseSensitive": false,
+  "cSpell.language": "es,en,es-ES",
+  "cSpell.userWords": [
+    "Bloglist",
+    "linebreak",
+    "Patientor",
+    "reduxjs",
+    "Togglable",
+    "vite",
+    "vitejs"
+  ],
   "diffEditor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
-  "editor.wordWrap": "on",
-  "explorer.confirmDragAndDrop": false,
-  "editor.fontSize": 14,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[json]": {
-    "editor.fontFamily": "CaskaydiaCove NF",
-    "editor.quickSuggestions": {
-      "strings": true
-    },
-    "editor.suggest.insertMode": "replace"
-  },
-  "[javascript]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "[typescript]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "[javascriptreact]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "[typescriptreact]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "[cpp]": {
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
-  },
-  "[c]": {
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
-  },
-  "[haskell]": {
-    "editor.fontFamily": "Consolas ligaturized v2,Consolas, 'Courier New', monospace"
-  },
+  "editor.foldingImportsByDefault": true,
+  "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": 350,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 32,
+  "editor.linkedEditing": true,
+  "editor.renderLineHighlight": "all",
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 1000,
   "explorer.confirmDelete": false,
-  "code-runner.ignoreSelection": true,
-  "workbench.startupEditor": "none",
-  "typescript.autoClosingTags": true,
-  "typescript.implementationsCodeLens.enabled": true,
-  "python.terminal.executeInFileDir": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "git.confirmSync": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "cpp": false
+  },
+  "haskell.manageHLS": "GHCup",
   "highlight-matching-tag.styles": {
     "opening": {
       "name": {
@@ -78,49 +73,167 @@
       }
     }
   },
-  "editor.tabSize": 2,
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-
-  "editor.fontWeight": "350",
-  "editor.fontLigatures": true,
-  "editor.lineHeight": 32,
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.cursorBlinking": "phase",
-  "editor.renderLineHighlight": "all",
-  "editor.foldingImportsByDefault": true,
-  "window.title": "${activeFolderMedium}\\${activeEditorShort}",
-  "workbench.colorTheme": "One Dark Pro",
-  "window.autoDetectHighContrast": false,
-  "git.confirmSync": false,
-  "cSpell.userWords": [
-    "Bloglist",
-    "linebreak",
-    "Patientor",
-    "reduxjs",
-    "Togglable",
-    "vite",
-    "vitejs"
-  ],
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+  "latex-workshop.view.pdf.viewer": "tab",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "notebook.lineNumbers": "on",
+  "prolog.executablePath": "C:\\Program Files\\swipl\\bin\\swipl",
+  "prolog.format.tabSize": 2,
+  "prolog.linter.run": "onType",
+  "python.terminal.executeInFileDir": true,
+  "python.testing.pytestEnabled": true,
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": " CaskaydiaCove NF, Consolas ligaturized v2, Consolas",
+  "typescript.autoClosingTags": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "window.autoDetectHighContrast": false,
+  "window.title": "${activeFolderMedium}\\${activeEditorShort}",
+  "workbench.colorTheme": "One Monokai",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#56B6C2",
+    "terminalCursor.foreground": "#56B6C2"
   },
   "workbench.editor.enablePreview": false,
-  "breadcrumbs.enabled": false,
-  "cSpell.language": "es,en,es-ES",
-  "cSpell.caseSensitive": false,
-  "redhat.telemetry.enabled": false,
-  "editor.wordWrapColumn": 1000,
-  "C_Cpp.formatting": "clangFormat",
-  "C_Cpp.vcFormat.indent.preserveComments": true,
-  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
-  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
-  "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
-  "C_Cpp.clang_format_sortIncludes": true
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
+  },
+  "[csharp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
+  },
+  "[haskell]": {
+    "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace"
+  },
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "[javascriptreact]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "[json]": {
+    "editor.fontFamily": " 'Cascadia Code' ",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[prolog]": {
+    "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace"
+  },
+  "[typescript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "[typescriptreact]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "'Cascadia Code',monospace"
+  },
+  "window.menuBarVisibility": "compact",
+  "editor.tokenColorCustomizations": {
+    "[One Monokai]": {
+      "strings": "#98C379",
+      "textMateRules": [
+        {
+          "scope": ["constant.language"],
+          "settings": {
+            "foreground": "#D19A66",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.function",
+            "support.function.js",
+            "support.type.property-name.css"
+          ],
+          "settings": {
+            "foreground": "#61afef",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.separator.key-value",
+            "storage.type.function.arrow.js"
+          ],
+          "settings": {
+            "foreground": "#E06C75"
+          }
+        },
+        {
+          "scope": ["support.class.component"],
+          "settings": {
+            "foreground": "#E5C07B"
+          }
+        },
+        {
+          "scope": ["storage.type"],
+          "settings": {
+            "foreground": "#C678DD"
+          }
+        },
+        {
+          "scope": ["entity.other.attribute-name"],
+          "settings": {
+            "foreground": "#d19a66",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.readwrite.alias",
+            "variable.other.property",
+            "variable.other.constant",
+            "variable.other.object"
+          ],
+          "settings": {
+            "foreground": "#43b6b9"
+          }
+        }
+      ]
+    }
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[One Monokai]": {
+      "enabled": true,
+      "rules": {
+        "class": { "foreground": "#d19a66", "bold": true },
+        "variable": "#43b6b9",
+        "enumMember": { "foreground": "#ab38cd", "italic": true },
+        "method": { "foreground": "#61afef", "italic": true },
+        "function": { "foreground": "#61afef", "italic": true },
+        "property": { "foreground": "#566fc2", "italic": true, "bold": true }
+      }
+    }
+  }
 }
