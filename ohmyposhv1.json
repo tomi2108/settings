@@ -5,9 +5,10 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "p:yellow",
+          "background": "p:blue",
           "foreground": "p:black",
           "leading_diamond": "\ue0b6",
+          "trailing_diamond": "<p:blue>\ue0b0</>",
           "properties": {
             "display_host": false
           },
@@ -16,7 +17,7 @@
           "type": "session"
         },
         {
-          "background": "p:orange",
+          "background": "p:purple",
           "foreground": "p:black",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -30,10 +31,11 @@
         {
           "background": "p:green",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:purple{{ end }}",
+            "{{ if .Staging.Changed }}p:orange{{ end }}",
+            "{{ if .Working.Changed }}p:yellow{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}",
-            "{{ if gt .Ahead 0 }}#49416D{{ end }}",
-            "{{ if gt .Behind 0 }}#7A306C{{ end }}"
+            "{{ if gt .Ahead 0 }}#7A306C{{ end }}",
+            "{{ if gt .Behind 0 }}#49416D{{ end }}"
           ],
           "foreground": "p:black",
           "foreground_templates": [
@@ -64,7 +66,7 @@
           "type": "root"
         },
         {
-          "background": "p:blue",
+          "background": "p:green",
           "background_templates": ["{{ if gt .Code 0 }}p:red{{ end }}"],
           "foreground": "p:black",
           "leading_diamond": "<transparent,background>\ue0b0</>",
@@ -130,13 +132,13 @@
   "final_space": true,
   "palette": {
     "black": "#282c34",
-    "blue": "#4B95E9",
-    "green": "#59C9A5",
-    "orange": "#F07623",
-    "red": "#D81E5B",
+    "blue": "#56B6C2",
+    "green": "#98C379",
+    "orange": "#D19A66",
+    "red": "#E06C75",
     "white": "#E0DEF4",
-    "yellow": "#F3AE35",
-    "purple": "#a74dfc"
+    "yellow": "#E5C07B",
+    "purple": "#C678DD"
   },
   "secondary_prompt": {
     "background": "transparent",

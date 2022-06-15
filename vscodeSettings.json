@@ -85,26 +85,18 @@
   "python.testing.pytestEnabled": true,
   "redhat.telemetry.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
-<<<<<<< HEAD
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontFamily": " CaskaydiaCove NF, Consolas ligaturized v2, Consolas",
-=======
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "Consolas",
->>>>>>> dc83b88f4980c1965b9d36fa4aff199c17c44561
   "typescript.autoClosingTags": true,
   "typescript.implementationsCodeLens.enabled": true,
   "window.autoDetectHighContrast": false,
   "window.title": "${activeFolderMedium}\\${activeEditorShort}",
-<<<<<<< HEAD
   "workbench.colorTheme": "One Monokai",
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#56B6C2",
     "terminalCursor.foreground": "#56B6C2"
   },
-=======
->>>>>>> dc83b88f4980c1965b9d36fa4aff199c17c44561
   "workbench.editor.enablePreview": false,
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
@@ -243,10 +235,5 @@
         "property": { "foreground": "#566fc2", "italic": true, "bold": true }
       }
     }
-<<<<<<< HEAD
   }
-=======
-  },
-  "workbench.colorTheme": "One Monokai"
->>>>>>> dc83b88f4980c1965b9d36fa4aff199c17c44561
 }
