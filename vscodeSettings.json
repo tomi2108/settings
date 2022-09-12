@@ -1,4 +1,54 @@
 {
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[haskell]": {},
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[prolog]": {},
+  "[typescript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "advancedNewFile.convenienceOptions": [
+    "last",
+    "root"
+  ],
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "build": true,
+    "dist": true,
+    "public": true
+  },
   "breadcrumbs.enabled": false,
   "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.formatting": "clangFormat",
@@ -6,20 +56,6 @@
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
   "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
-  "code-runner.ignoreSelection": true,
-  "code-runner.runInTerminal": true,
-  "code-runner.saveAllFilesBeforeRun": true,
-  "cSpell.caseSensitive": false,
-  "cSpell.language": "es,en,es-ES",
-  "cSpell.userWords": [
-    "Bloglist",
-    "linebreak",
-    "Patientor",
-    "reduxjs",
-    "Togglable",
-    "vite",
-    "vitejs"
-  ],
   "diffEditor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
@@ -28,25 +64,153 @@
   },
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.foldingImportsByDefault": true,
-  "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace",
+  "editor.fontFamily": "'BitstreamVeraSansMono NF','SourceCodePro NF','Cascadia Code', 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.fontWeight": 350,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.lineHeight": 32,
+  "editor.lineHeight": 30,
   "editor.linkedEditing": true,
   "editor.renderLineHighlight": "all",
+  "editor.semanticTokenColorCustomizations": {
+    "[One Monokai]": {
+      "enabled": true,
+      "rules": {
+        "type": {
+          "foreground": "#E5C07B"
+        },
+        "typeParameter": {
+          "foreground": "#E5C07B",
+          "bold": true
+        },
+        "interface": {
+          "foreground": "#d19a66",
+          "bold": true
+        },
+        "class": {
+          "foreground": "#d19a66",
+          "bold": true
+        },
+        "variable": "#43b6b9",
+        "enumMember": {
+          "foreground": "#ab38cd",
+          "italic": true
+        },
+        "method": {
+          "foreground": "#61afef",
+          "italic": true,
+          "bold": true
+        },
+        "function": {
+          "foreground": "#61afef",
+          "italic": true
+        },
+        "property": {
+          "foreground": "#43b6b9",
+          "italic": true
+        }
+      }
+    }
+  },
   "editor.smoothScrolling": true,
+  "editor.suggest.showWords": false,
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[One Monokai]": {
+      "strings": "#98C379",
+      "textMateRules": [
+        {
+          "scope": [
+            "constant.language"
+          ],
+          "settings": {
+            "foreground": "#D19A66",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.function",
+            "support.function.js",
+            "support.type.property-name.css"
+          ],
+          "settings": {
+            "foreground": "#61afef",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.separator.key-value",
+            "storage.type.function.arrow.js"
+          ],
+          "settings": {
+            "foreground": "#E06C75"
+          }
+        },
+        {
+          "scope": [
+            "support.class.component"
+          ],
+          "settings": {
+            "foreground": "#E5C07B"
+          }
+        },
+        {
+          "scope": [
+            "storage.modifier",
+            "storage.type",
+            "storage.modifier.async.js",
+            "keyword.control",
+            "keyword.operator.new.js"
+          ],
+          "settings": {
+            "foreground": "#C678DD"
+          }
+        },
+        {
+          "scope": [
+            "entity.other.attribute-name"
+          ],
+          "settings": {
+            "foreground": "#d19a66",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "support.type.builtin.ts",
+            "support.type.primitive"
+          ],
+          "settings": {
+            "foreground": "#E5C07B"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.readwrite.alias",
+            "variable.other.property",
+            "variable.other.constant",
+            "variable.other.object"
+          ],
+          "settings": {
+            "foreground": "#43b6b9"
+          }
+        }
+      ]
+    }
+  },
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 1000,
+  "eslint.format.enable": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -54,13 +218,6 @@
     "**/.factorypath": true
   },
   "git.confirmSync": false,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false,
-    "cpp": false
-  },
   "haskell.manageHLS": "GHCup",
   "highlight-matching-tag.styles": {
     "opening": {
@@ -91,149 +248,48 @@
   "typescript.autoClosingTags": true,
   "typescript.implementationsCodeLens.enabled": true,
   "window.autoDetectHighContrast": false,
+  "window.commandCenter": true,
+  "window.menuBarVisibility": "compact",
   "window.title": "${activeFolderMedium}\\${activeEditorShort}",
+  "workbench.activityBar.visible": false,
   "workbench.colorTheme": "One Monokai",
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#56B6C2",
-    "terminalCursor.foreground": "#56B6C2"
+    "activityBar.background": "#131313",
+    "editor.background": "#131313",
+    "editor.lineHighlightBackground": "#202020",
+    "editor.selectionBackground": "#404040",
+    "editor.selectionHighlightBackground": "#333333",
+    "editorCursor.foreground": "#3178C6",
+    "editorGroup.emptyBackground": "#131313",
+    "editorGroupHeader.tabsBackground": "#202020",
+    "editorHoverWidget.background": "#202020",
+    "editorSuggestWidget.background": "#202020",
+    "editorSuggestWidget.selectedBackground": "#333333",
+    "input.background": "#131313",
+    "menu.background": "#202020",
+    "menu.selectionBackground": "#333333",
+    "quickInput.background": "#202020",
+    "quickInputList.focusBackground": "#333333",
+    "scrollbarSlider.background": "#202020",
+    "sideBar.background": "#131313",
+    "sideBar.border": "#333333",
+    "statusBar.background": "#131313",
+    "tab.activeBackground": "#131313",
+    "tab.border": "#202020",
+    "tab.inactiveBackground": "#202020",
+    "tab.inactiveForeground": "#fff",
+    "terminal.background": "#131313",
+    "terminalCursor.foreground": "#3178C6",
+    "titleBar.activeBackground": "#202020",
+    "titleBar.inactiveBackground": "#202020",
+    "toolbar.activeBackground": "#131313"
   },
   "workbench.editor.enablePreview": false,
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "icons",
   "workbench.startupEditor": "none",
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
-  },
-  "[cpp]": {
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
-  },
-  "[csharp]": {
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
-    "editor.defaultFormatter": "ms-dotnettools.csharp",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.fontFamily": "Consolas ligaturized v2,Consolas, Monaco"
-  },
-  "[haskell]": {
-    "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace"
-  },
-  "[javascript]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "[javascriptreact]": {
-    "editor.suggest.insertMode": "replace",
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "[json]": {
-    "editor.fontFamily": " 'Cascadia Code' ",
-    "editor.quickSuggestions": {
-      "strings": true
-    },
-    "editor.suggest.insertMode": "replace"
-  },
-  "[prolog]": {
-    "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace"
-  },
-  "[typescript]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "[typescriptreact]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "'Cascadia Code',monospace"
-  },
-  "window.menuBarVisibility": "compact",
-  "editor.tokenColorCustomizations": {
-    "[One Monokai]": {
-      "strings": "#98C379",
-      "textMateRules": [
-        {
-          "scope": ["constant.language"],
-          "settings": {
-            "foreground": "#D19A66",
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": [
-            "entity.name.function",
-            "support.function.js",
-            "support.type.property-name.css"
-          ],
-          "settings": {
-            "foreground": "#61afef",
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": [
-            "punctuation.separator.key-value",
-            "storage.type.function.arrow.js"
-          ],
-          "settings": {
-            "foreground": "#E06C75"
-          }
-        },
-        {
-          "scope": ["support.class.component"],
-          "settings": {
-            "foreground": "#E5C07B"
-          }
-        },
-        {
-          "scope": ["storage.type"],
-          "settings": {
-            "foreground": "#C678DD"
-          }
-        },
-        {
-          "scope": ["entity.other.attribute-name"],
-          "settings": {
-            "foreground": "#d19a66",
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": [
-            "variable.other.readwrite.alias",
-            "variable.other.property",
-            "variable.other.constant",
-            "variable.other.object"
-          ],
-          "settings": {
-            "foreground": "#43b6b9"
-          }
-        }
-      ]
-    }
-  },
-  "editor.semanticTokenColorCustomizations": {
-    "[One Monokai]": {
-      "enabled": true,
-      "rules": {
-        "class": { "foreground": "#d19a66", "bold": true },
-        "variable": "#43b6b9",
-        "enumMember": { "foreground": "#ab38cd", "italic": true },
-        "method": { "foreground": "#61afef", "italic": true },
-        "function": { "foreground": "#61afef", "italic": true },
-        "property": { "foreground": "#566fc2", "italic": true, "bold": true }
-      }
-    }
-  }
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
 }
