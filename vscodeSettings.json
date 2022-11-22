@@ -1,25 +1,25 @@
 {
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.wordBasedSuggestions": false,
+    "editor.semanticHighlighting.enabled": true,
     "editor.suggest.insertMode": "replace",
-    "editor.semanticHighlighting.enabled": true
+    "editor.wordBasedSuggestions": false,
   },
   "[cpp]": {
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
     "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.semanticHighlighting.enabled": true
+    "editor.semanticHighlighting.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.wordBasedSuggestions": false,
   },
   "[haskell]": {},
   "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[javascriptreact]": {
-    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.suggest.insertMode": "replace",
   },
   "[json]": {
     "editor.quickSuggestions": {
@@ -32,12 +32,12 @@
   },
   "[prolog]": {},
   "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "advancedNewFile.convenienceOptions": [
     "last",
@@ -56,6 +56,11 @@
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
   "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+  "customizeUI.listRowHeight": 27,
+  "customizeUI.stylesheet": {
+    ".monaco-workbench .part > .content .folder-icon": "font-weight: bold;",
+    ".monaco-workbench .part.sidebar>.title>.title-label h2": "display: none;",
+  },
   "diffEditor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
@@ -77,14 +82,40 @@
   "editor.lineHeight": 30,
   "editor.linkedEditing": true,
   "editor.minimap.renderCharacters": false,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
   "editor.padding.top": 15,
   "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
   "editor.semanticTokenColorCustomizations": {
     "[One Monokai]": {
       "enabled": true,
       "rules": {
+        "class": {
+          "foreground": "#d19a66",
+          "bold": true
+        },
+        "enumMember": {
+          "foreground": "#ab38cd",
+          "italic": true
+        },
+        "function": {
+          "foreground": "#61afef",
+          "italic": true
+        },
+        "interface": {
+          "foreground": "#d19a66",
+          "bold": true
+        },
+        "method": {
+          "foreground": "#61afef",
+          "italic": true,
+          "bold": true
+        },
+        "property": {
+          "foreground": "#43b6b9",
+          "italic": true
+        },
         "type": {
           "foreground": "#E5C07B"
         },
@@ -92,32 +123,7 @@
           "foreground": "#E5C07B",
           "bold": true
         },
-        "interface": {
-          "foreground": "#d19a66",
-          "bold": true
-        },
-        "class": {
-          "foreground": "#d19a66",
-          "bold": true
-        },
         "variable": "#43b6b9",
-        "enumMember": {
-          "foreground": "#ab38cd",
-          "italic": true
-        },
-        "method": {
-          "foreground": "#61afef",
-          "italic": true,
-          "bold": true
-        },
-        "function": {
-          "foreground": "#61afef",
-          "italic": true
-        },
-        "property": {
-          "foreground": "#43b6b9",
-          "italic": true
-        }
       }
     }
   },
@@ -138,8 +144,8 @@
             "constant.language"
           ],
           "settings": {
+            "fontStyle": "italic",
             "foreground": "#D19A66",
-            "fontStyle": "italic"
           }
         },
         {
@@ -149,8 +155,8 @@
             "support.type.property-name.css"
           ],
           "settings": {
+            "fontStyle": "italic",
             "foreground": "#61afef",
-            "fontStyle": "italic"
           }
         },
         {
@@ -222,6 +228,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
+  "extensions.ignoreRecommendations": true,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -234,9 +241,9 @@
     "opening": {
       "name": {
         "custom": {
-          "borderWidth": "0 0 1px 0",
+          "borderColor": "yellow",
           "borderStyle": "solid",
-          "borderColor": "yellow"
+          "borderWidth": "0 0 1px 0",
         }
       }
     }
@@ -262,6 +269,7 @@
   "window.commandCenter": true,
   "window.menuBarVisibility": "compact",
   "window.title": "${activeFolderMedium}\\${activeEditorShort}",
+  "workbench.activityBar.visible": false,
   "workbench.colorTheme": "One Monokai",
   "workbench.colorCustomizations": {
     "activityBar.background": "#181819",
@@ -303,19 +311,18 @@
     "titleBar.activeBackground": "#202022",
     "titleBar.inactiveBackground": "#202022",
     "toolbar.activeBackground": "#181819",
+    "tree.indentGuidesStroke": "#3E4451",
   },
-  "workbench.tree.renderIndentGuides": "none",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": true,
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "customizeUI.listRowHeight": 40,
-  "workbench.activityBar.visible": false,
   "workbench.iconTheme": "moxer-icons",
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
+  "workbench.tree.renderIndentGuides": "always",
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
-  "explorer.compactFolders": false,
 }
