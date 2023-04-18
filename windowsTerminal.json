@@ -3,33 +3,8 @@
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": [
         {
-            "command": {
-                "action": "splitPane"
-            },
-            "keys": "ctrl+r"
-        },
-        {
-            "command": {
-                "action": "moveFocus",
-                "direction": "nextInOrder"
-            },
-            "keys": "ctrl+q"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
             "command": "closePane",
             "keys": "ctrl+w"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": {
@@ -47,8 +22,8 @@
     "alwaysShowNotificationIcon": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "launchMode": "default",
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "launchMode": "fullscreen",
     "profiles": {
         "defaults": {
             "antialiasingMode": "grayscale",
@@ -57,7 +32,7 @@
             "cursorColor": "#528BFF",
             "font": {
                 "face": "CaskaydiaCove NF",
-                "size": 11
+                "size": 11.0
             },
             "intenseTextStyle": "bright",
             "opacity": 100,
@@ -99,7 +74,37 @@
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore",
-                "startingDirectory": "C:\\Programacion"
+                "startingDirectory": "C:\\Users\\tomi\\Programacion"
+            },
+            {
+                "font": {
+                    "face": "Inconsolata NF",
+                    "size": 13.0
+                },
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "font": {
+                    "face": "Inconsolata NF",
+                    "size": 13.0
+                },
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "padding": "10, 10, 10, 10",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "%USERPROFILE%\\Programacion",
+                "tabTitle": "Ubuntu"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },

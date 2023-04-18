@@ -3,23 +3,25 @@
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.semanticHighlighting.enabled": true,
     "editor.suggest.insertMode": "replace",
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": false
   },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.semanticHighlighting.enabled": true,
     "editor.suggest.insertMode": "replace",
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": false
   },
-  "[haskell]": {},
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.maxTokenizationLineLength": 2500,
+    "editor.maxTokenizationLineLength": 2500
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.maxTokenizationLineLength": 2500,
-    "editor.suggest.insertMode": "replace",
+    "editor.suggest.insertMode": "replace"
   },
   "[json]": {
     "editor.quickSuggestions": {
@@ -33,11 +35,11 @@
   "[prolog]": {},
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.maxTokenizationLineLength": 2500,
+    "editor.maxTokenizationLineLength": 2500
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.maxTokenizationLineLength": 2500,
+    "editor.maxTokenizationLineLength": 2500
   },
   "advancedNewFile.convenienceOptions": [
     "last",
@@ -49,6 +51,10 @@
     "dist": true,
     "public": true
   },
+  "auto-close-tag.disableOnLanguage": [
+    "typescript"
+  ],
+  "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
   "breadcrumbs.enabled": false,
   "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.formatting": "clangFormat",
@@ -62,8 +68,7 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.foldingImportsByDefault": true,
   "editor.fontFamily": "'Inconsolata NF','BitstreamVeraSansMono NF','SourceCodePro NF','Cascadia Code', 'Courier New', monospace",
@@ -91,7 +96,7 @@
           "bold": true
         },
         "enumMember": {
-          "foreground": "#ab38cd",
+          "foreground": "#9439af",
           "italic": true
         },
         "function": {
@@ -108,7 +113,7 @@
           "bold": true
         },
         "property": {
-          "foreground": "#98C379",
+          "foreground": "#43b6b9",
           "italic": true
         },
         "type": {
@@ -118,11 +123,12 @@
           "foreground": "#E5C07B",
           "bold": true
         },
-        "variable": "#43b6b9",
+        "variable": "#43b6b9"
       }
     }
   },
   "editor.smoothScrolling": true,
+  "editor.suggest.insertMode": "replace",
   "editor.suggest.showWords": false,
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
@@ -140,7 +146,7 @@
           ],
           "settings": {
             "fontStyle": "italic",
-            "foreground": "#D19A66",
+            "foreground": "#D19A66"
           }
         },
         {
@@ -151,7 +157,7 @@
           ],
           "settings": {
             "fontStyle": "italic",
-            "foreground": "#61afef",
+            "foreground": "#61afef"
           }
         },
         {
@@ -224,6 +230,10 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
   "extensions.ignoreRecommendations": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -232,13 +242,14 @@
   },
   "git.confirmSync": false,
   "haskell.manageHLS": "GHCup",
+  "haskell.plugin.importLens.codeLensOn": false,
   "highlight-matching-tag.styles": {
     "opening": {
       "name": {
         "custom": {
           "borderColor": "yellow",
           "borderStyle": "solid",
-          "borderWidth": "0 0 1px 0",
+          "borderWidth": "0 0 1px 0"
         }
       }
     }
@@ -260,6 +271,7 @@
   "terminal.integrated.fontFamily": " CaskaydiaCove NF, Consolas ligaturized v2, Consolas",
   "typescript.autoClosingTags": true,
   "typescript.implementationsCodeLens.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectHighContrast": false,
   "window.commandCenter": true,
   "window.menuBarVisibility": "compact",
@@ -306,19 +318,23 @@
     "titleBar.activeBackground": "#21252b",
     "titleBar.inactiveBackground": "#21252b",
     "toolbar.activeBackground": "#282C34",
-    "tree.indentGuidesStroke": "#3E4451",
+    "tree.indentGuidesStroke": "#3E4451"
   },
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": true,
+  "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
   },
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.fastScrollSensitivity": 10,
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
-  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 14,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "zenMode.hideTabs": false
 }
